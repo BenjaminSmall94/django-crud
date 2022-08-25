@@ -5,9 +5,9 @@
 {% endblock title %}
 
 {% block content %}
-    <h2>Details about {{ snack.title }}</h2>
-    <h2>Purchaser: {{ snack.purchaser }}</h2>
-    <p>{{ snack.description }}</p>
-    <a href="{% url 'snack_update' snack.pk %}">Update Snack</a>
-    <a href="{% url 'snack_delete' snack.pk %}">Delete Snack</a>
+    <h2 class="mx-auto mb-1 w-max text-2xl font-bold underline">Details about {{ snack.title }}</h2>
+    <h2 class="ml-1">Purchaser: {{ snack.purchaser }}</h2>
+    <p class="ml-1">{{ snack.description }}</p>
+    <a href="{% url 'snack_update' snack.pk %}" class="inline-block m-1 px-0.5 bg-green-600 text-white text-center border-2 border-black rounded">Update Snack</a>
+    <a href="{% url 'snack_delete' snack.pk %}" class="inline-block m-1 px-0.5 bg-red-500 text-white text-center border-2 border-black rounded">Delete Snack</a>
 {% endblock content %}

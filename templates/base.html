@@ -5,13 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>{% block title %}Replace me PLEEEEASE!!{% endblock title %}</title>
 </head>
-<body>
+<body class="bg-fuchsia-200">
     <header>
         <nav>
-            <a href="{% url 'snack_list' %}">List</a>
-            <a href="{% url 'snack_create' %}">Create</a>
+            <a href="{% url 'snack_list' %}" class="inline-block m-1 px-0.5 bg-sky-400 text-white text-center border-2 border-black rounded">List</a>
+            <a href="{% url 'snack_create' %}" class="inline-block m-1 px-0.5 bg-sky-400 text-white text-center border-2 border-black rounded">Create</a>
         </nav>
     </header>
     <main>
