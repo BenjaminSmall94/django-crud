@@ -5,10 +5,10 @@
 {% endblock title %}
 
 {% block content %}
-    <h1>List</h1>
-    <ul>
+    <h1 class="mx-auto w-max text-2xl font-bold underline">List</h1>
+    <ul class="list-disc">
         {% for snack in object_list %}
-        <li><a href="{% url 'snack_detail' snack.pk %}">{{ snack.title }}</a></li>
+        <li><a href="{% url 'snack_detail' snack.pk %}" class="underline text-blue-400">{{ snack.title }}</a></li>
         {% endfor %}
     </ul>
 {% endblock content %}
